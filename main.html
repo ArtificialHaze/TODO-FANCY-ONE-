@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="vakho" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>TODOList</title>
+  </head>
+  <body>
+    <header><h1>TODOS LIST</h1></header>
+    <form action="#">
+      <input type="text" class="todo__input" />
+      <button type="submit" class="todo__button">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="todo__filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="unfinished">Not Completed</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo__container">
+      <ul class="todo__list"></ul>
+    </div>
+  </body>
+  <script defer src="./main.js"></script>
+</html>
